@@ -1,6 +1,8 @@
 {-# LANGUAGE StandaloneDeriving,DeriveGeneric #-}
 module Data.Serialize.Instances where
 
+import Data.Hashable
+import Data.HashMap.Lazy as Lazy
 import Data.List.NonEmpty
 import Data.Serialize
 import Data.Typeable
@@ -31,3 +33,8 @@ instance Serialize TypeRep where
 instance Serialize1 NonEmpty where
 
 instance Serialize a => Serialize (NonEmpty a) where
+
+instance (Eq k,Hashable k,Serialize k,Serialize a) => Serialize (Lazy.HashMap k a) where
+    get = Lazy.fromList <$> get
+    put = put . Lazy.toList
+
