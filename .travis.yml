@@ -20,8 +20,8 @@ cache:
   - $HOME/.ghc
   - $HOME/.cabal
   - $HOME/.stack
-  - $HOME/literate-unitb/serialize-instances/.stack-work/install
-  - $HOME/literate-unitb/serialize-instances/.stack-work/downloaded
+  - $HOME/unitb/serialize-instances/.stack-work/install
+  - $HOME/unitb/serialize-instances/.stack-work/downloaded
 
 # The different configurations we want to test. We have BUILD=cabal which uses
 # cabal-install, and BUILD=stack which uses Stack. More documentation on each
@@ -206,4 +206,4 @@ deploy:
     secure: TWVhhfiTYejJcK732ZEeHNBaJ7nCsR+K1s56AnwUzeyILA/MwafvWy2C543OKlw+VBGjqT0ELrhYg4wj7O6IEGXIn9GsKSa9b7M33Yk6QuDM1IFeZWqpkaN0Elt5h8xHN2S0ZcPE4hvEMz8b568+vswe2TN2G7oGnhAF3TDWTLlO4t4c0E3i29Xe50e1tpt2jTQfBgSFfHgDt4B/DFciYb+ih0l7uVF9yQlw0utav8gYEASnqvVFP7q6O47PBs9GcDvFWGYnCOgyXiEddVtK7xMVnYC84mrBQQAZ1bmQp00mqvGSMcocwhB2xnUZfhFMqiC8uDOYulKYDA7brFhESN1dAGStrt0KZk3sk5NVji63hQAqdu0ABLccRD4kr41HHXeEvCb4+PiBQjZaFmycrCJ9RE26H56c/dRl8yIGvu6NyauZRqmJX64ka5sWHwLgxfjukE3bg50kRjorORLxrg9xF5w6dFEf6y1AOqQWHOp5Jy97qXlKlN19WqJRRggOJkkEoNPea6am/n+HmlOjerpBmawpJ16jw/BhZnk1dLwrn6J83+fXQFIL8QNlTq/LousiVkhZdstYT/XuQ/zgfGHm9g59i80ygD6aZbztJVOROEcPJQJIWDfYcVyvKyU6oR/nG4S4w0jicKjCYV/JxCr49GSzsGdc81iPsJomFuI=
   on:
     tags: true
-    repo: literate-unitb/serialize-instances
+    repo: unitb/serialize-instances
